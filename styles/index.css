@@ -117,14 +117,22 @@ main .container .left {
     position: absolute;
     top: 150px;
     left: 66px;
-    line-height: 25px;
+    /* line-height: 25px; */
   }
   .top-left > h1 {
     font-family: "Bodoni Moda", serif;
     font-weight: 100;
     font-size: 39px;
+    line-height: 25px;
     margin-bottom: 30px;
   }
+.top-left > h1>p {
+  font-weight: 700;
+  
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
 
 .btn {
   margin-top: 30px;
