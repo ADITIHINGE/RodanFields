@@ -121,19 +121,34 @@ main .container .left {
   }
   .top-left > h1 {
     font-family: "Bodoni Moda", serif;
-    font-weight: 100;
+    font-weight: 10;
     font-size: 39px;
-    line-height: 25px;
-    margin-bottom: 30px;
+    line-height: 15px;
+    margin-bottom: 40px;
   }
-.top-left > h1>p {
-  font-weight: 700;
-  
-  margin-bottom: 20px;
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 20px;
-}
 
+.top-left > p{
+    font-size: 18px;
+    line-height:5px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  }
+.p{
+    font-size: 12px;
+    line-height:5px;
+    font-weight: 500;
+    color: #222;
+    margin-top: 35px;
+  font-family: "Montserrat", sans-serif; 
+}
+.top-left > h6+a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #222;
+    margin-left:-150px;
+    margin-top:27px;
+  } 
 .btn {
   margin-top: 30px;
   font-weight: 600;
@@ -146,10 +161,11 @@ main .container .left {
   border: solid 1px #222;
   background-color: #fff;
   cursor: pointer;
+  width:300px;
 }
 .btn:active {
   box-shadow: 0 0 5px 2px #80aec9, 0 0 5px 0 rgb(0 0 0 / 50%) inset;
-}
+} 
 
 main > a {
   position: absolute;
