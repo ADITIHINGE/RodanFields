@@ -1,7 +1,7 @@
-  // scroll to top button 
+
   var mybutton = document.querySelector(".scroll-up-btn");
   mybutton.addEventListener("click",topFunction);
-  // When the user scrolls down 40px from the top of the document, show the button
+ 
   window.onscroll = function() {scrollFunction()};
   
   function scrollFunction() {
@@ -12,7 +12,7 @@
     }
   }
   
-  // When the user clicks on the button, scroll to the top of the document
+  t
   function topFunction() {
     document.documentElement.scrollTo({
       top: 0,
@@ -20,7 +20,7 @@
     })
   }
   
-  // sticky navbar 
+ 
   var lastScrollTop = 0;
   var navbar = document.querySelector("nav");
   window.addEventListener("scroll",function(){
@@ -33,7 +33,7 @@
       lastScrollTop=scrollTop;
   })
   
-  // signin form toggle 
+
   
   var signin_btn = document.querySelector(".links>.sign_in");
   
@@ -46,7 +46,7 @@
   }
   
   
-  // search box 
+ 
   var search_btn = document.querySelectorAll(".search");
   var cart_btn = document.querySelectorAll(".cart");
   
@@ -94,7 +94,7 @@
   }
   
   
-  // for mobile navbar 
+
   var ham_btn = document.querySelector(".ham_menu");
   ham_btn.addEventListener("click",toggle_navmenu);
   

@@ -1,4 +1,4 @@
-//-----------------Left Portion:contact and payment details-------------
+
 var input1=document.querySelector("#pwwd");
 var length=document.querySelector("#length");
 var capital=document.querySelector("#capital");
@@ -6,8 +6,7 @@ var lower=document.querySelector("#lower");
 var number=document.querySelector("#number");
 var specialchar=document.querySelector("#specialchar");
 
-//---------------------Contact Portion-----------------
-// --------------------Toggle Password------------------
+
 var togglepwd=document.querySelector("#togglepwd");
 var pwd=document.querySelector("#pwwd");
 
@@ -15,7 +14,7 @@ togglepwd.addEventListener("click",function(){
     var type=pwd.getAttribute("type")==="password"?"text":"password";
     pwd.setAttribute("type",type);
 
-    //toggle i tag's class(Icon gets toggle)
+   
     
     if(type === "password")
     {
@@ -43,7 +42,7 @@ function myScript(event){
 
     event.preventDefault();
     
-    //upperCase validation
+  
     var upperCase = /[A-Z]/g;
 
     if(input1.value.match(upperCase))
@@ -57,7 +56,6 @@ function myScript(event){
             capital.classList.add("invalid");
         }
 
-    //lowerCase validation
     var lowerCase = /[a-z]/g;
 
     if(input1.value.match(lowerCase))
@@ -84,8 +82,7 @@ function myScript(event){
             number.classList.remove("valid");
             number.classList.add("invalid");
         }
-    
-    //special character validation
+  
     var special = /[~`@!#$%^&_:]/g;
 
     if(input1.value.match(special))
@@ -98,7 +95,7 @@ function myScript(event){
             specialchar.classList.remove("valid");
             specialchar.classList.add("invalid");
         }
-    //length
+
 
     if(input1.value.length >= 8 && input1.value.length <=64)
         {
@@ -112,9 +109,7 @@ function myScript(event){
         }
 }
 
-// -----------------------Sign-in-------------------------
 
-//--------------------Visibilty of next block(shipping and payment) only when "save and continue" button is clicked--------
 var arr =  JSON.parse(localStorage.getItem('signindata')) || [];
 console.log(typeof (arr));
 var form1= document.querySelector("#contact");
@@ -138,7 +133,7 @@ function check_user(event){
 }
 
 
-//-----------------Right Portion:Order Summary------------
+
 var cartList=JSON.parse(localStorage.getItem("cartList"));
 
 display(cartList);
@@ -193,7 +188,6 @@ function displayTotal()
     document.querySelector("#subtotal>p:last-child").value=total;
 }
 
-//--------------------Final Total:Added Shipping Charges when one of radio button clicked from "select shipping" block.---------- 
 
 function myscript()
 {
@@ -235,16 +229,16 @@ function myscript()
     
     
       var subtotal=+(document.querySelector("#subtotal>p:last-child").value);
-    //   console.log("----------subtotal",subtotal);
+ 
 
       var offer=17.50;
-    //   console.log("-----------offer",offer);
+   
 
       var tax=+(document.querySelector("#tax>p:last-child").value);
-    //   console.log("----------tax",tax);
+    
 
       var shiptotal=+(document.querySelector("#shiptotal>p:last-child").value);
-    //   console.log("----------shiptotal",shiptotal);
+    
       
       var finalTotal=subtotal+offer+tax+shiptotal;
       document.querySelector("#finalTotal>p:last-child").innerText="$"+finalTotal;

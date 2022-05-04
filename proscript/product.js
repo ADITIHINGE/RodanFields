@@ -90,11 +90,7 @@ const populateProducts = () => {
     disc.innerText=elem.disc;
     disc.id="elemdisc"
 
-    // var qty=document.createElement("p")
-    // qty.innerText=elem.qty;
-    // qty.id="elemqty"
-
-  //star section
+   
     var star=document.createElement("p")
     star.innerText=elem.star;
     star.id="elemstar"
@@ -123,7 +119,7 @@ const populateProducts = () => {
    button.addEventListener("click",function(){
        addtocart(elem)
    })
-   //maindiv
+   
     mainDiv.append(image,childDiv,rewDiv,button)
     mainDiv.id="mainDiv"
     document.querySelector("#productarray").append(mainDiv)
@@ -206,10 +202,10 @@ const myfunction = (filter) =>{
     populateProducts();
    }
  
-   // scroll to top button 
+
 var mybutton = document.querySelector(".scroll-up-btn");
 mybutton.addEventListener("click",topFunction);
-// When the user scrolls down 40px from the top of the document, show the button
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -220,7 +216,7 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+
 function topFunction() {
   document.documentElement.scrollTo({
     top: 0,
@@ -228,7 +224,7 @@ function topFunction() {
   })
 }
 
-// sticky navbar 
+ 
 var lastScrollTop = 0;
 var navbar = document.querySelector("nav");
 window.addEventListener("scroll",function(){
@@ -241,7 +237,7 @@ window.addEventListener("scroll",function(){
     lastScrollTop=scrollTop;
 })
 
-// signin form toggle 
+
 
 var signin_btn = document.querySelector(".links>.sign_in");
 
@@ -254,7 +250,7 @@ function toggle_form(){
 }
 
 
-// search box 
+
 var search_btn = document.querySelectorAll(".search");
 var cart_btn = document.querySelectorAll(".cart");
 
@@ -302,7 +298,6 @@ function close_cart(){
 }
 
 
-// for mobile navbar 
 var ham_btn = document.querySelector(".ham_menu");
 ham_btn.addEventListener("click",toggle_navmenu);
 

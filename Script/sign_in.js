@@ -9,8 +9,8 @@ function sign_in(e) {
   var password = form.password.value;
 
   if (email.trim() == "" || password.trim() == "") {
-    document.querySelector("#email").style.backgroundColor = "#ff7070";
-    document.querySelector("#password").style.backgroundColor = "#ff7070";
+    document.querySelector("#email").style.backgroundColor = "rgba(255, 255, 255, 0.977)";
+    document.querySelector("#password").style.backgroundColor = "rgba(255, 255, 255, 0.977)";
     document.querySelector(".user_required").innerText = "Username is required";
     document.querySelector(".pass_required").innerText = "Password is required";
   } else {
@@ -33,8 +33,8 @@ function sign_in(e) {
         } 
         else {
         localStorage.setItem("loggedUser", 0)
-        document.querySelector("#email").style.backgroundColor = "#ff7070";
-        document.querySelector("#password").style.backgroundColor = "#ff7070";
+        document.querySelector("#email").style.backgroundColor = "rgba(255, 255, 255, 0.977)";
+        document.querySelector("#password").style.backgroundColor = "rgba(255, 255, 255, 0.977)";
         document.querySelector(".pass_required").style.color = "red";
         document.querySelector(".pass_required").innerText = "Wrong Credentials";
         }
