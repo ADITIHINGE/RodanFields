@@ -194,7 +194,6 @@ function trigger_right1(){
 }
 
 
-// signin form toggle 
 
 var signin_btn = document.querySelector(".links>.sign_in");
 
@@ -207,7 +206,7 @@ function toggle_form(){
 }
 
 
-// search box 
+
 var search_btn = document.querySelectorAll(".search");
 var cart_btn = document.querySelectorAll(".cart");
 
@@ -235,7 +234,6 @@ function closeSearch(){
   document.body.classList.remove("no_scroll");
 }
 
-//cart slider
 var close_cart_btn= document.querySelector(".cart_area > .cart_box > .cart_nav>p");
 close_cart_btn.addEventListener("click",close_cart);
 
@@ -255,7 +253,7 @@ function close_cart(){
 }
 
 
-// for mobile navbar 
+ 
 var ham_btn = document.querySelector(".ham_menu");
 ham_btn.addEventListener("click",toggle_navmenu);
 
