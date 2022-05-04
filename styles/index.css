@@ -117,11 +117,10 @@ main .container .left {
     position: absolute;
     top: 150px;
     left: 66px;
-    /* line-height: 25px; */
   }
   .top-left > h1 {
     font-family: "Bodoni Moda", serif;
-    font-weight: 10;
+    font-weight: 1;
     font-size: 39px;
     line-height: 15px;
     margin-bottom: 40px;
@@ -138,21 +137,23 @@ main .container .left {
     font-size: 12px;
     line-height:5px;
     font-weight: 500;
+    margin-left:-20px;
     color: #222;
     margin-top: 35px;
   font-family: "Montserrat", sans-serif; 
 }
-.top-left > h6+a {
+.top-left > div>a {
     font-size: 12px;
     text-decoration: underline;
     color: #222;
-    margin-left:-150px;
+    margin-left:-170px;
     margin-top:27px;
   } 
 .btn {
-  margin-top: 30px;
-  font-weight: 600;
+  margin-top: 50px;
+  font-weight: 500;
   color: #222;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
   text-transform: uppercase;

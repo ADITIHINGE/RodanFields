@@ -4,18 +4,163 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" media="all"href="./Styles/favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      media="all"
+      href="https://www.rodanandfields.com/en-us/_ui/responsive/theme-alpha/images/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
       integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./styles/nav.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <title>Rodan + Fields® | Dermatologist Inspired Skincare Products</title>
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Styles/navbar_footer.css" />
+    <title>Your Bag | Rodan + Fields®</title>
   </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat:wght@400;600;700&family=Noto+Serif+Display&display=swap");
+
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    #cartPage_container {
+      width: 80%;
+      padding: 150px 0 20px 0;
+      margin: auto;
+    }
+
+    #hader {
+      text-align: center;
+      font-family: "Bodoni moda", sans-serif;
+    }
+    #display {
+      display: flex;
+      justify-content: space-around;
+    }
+    #mmbrship {
+      background-color: rgb(194, 194, 194);
+      border: 2px black;
+      padding: 60px;
+    }
+    #btn {
+      height: 40px;
+      width: 100%;
+      margin-top: 10px;
+      background-color: black;
+      color: aliceblue;
+    }
+    #summary {
+      background-color: rgb(248, 248, 248);
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid gray;
+      padding: 20px;
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+    }
+
+    #summary_card {
+      display: flex !important;
+      width: 100%;
+    }
+    #summary_card > img {
+      width: 100px;
+    }
+    #summary_card > div {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 20px;
+    }
+    #summary_card > div > div:nth-child(1) {
+      text-align: left;
+    }
+    #summary_card > div > div:nth-child(1) > p {
+      color: rgb(96, 96, 230);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .inc,
+    .dec {
+      padding: 2px 6px;
+    }
+
+    #summary_card > div > div:nth-child(1) > span {
+      border: 1px solid #888;
+      padding: 1px 8px;
+    }
+
+    #summary_card > div > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 70%;
+    }
+
+    #order_summary {
+      border: 1px solid #bbb;
+      height: fit-content;
+    }
+
+    #order_summary > h2 {
+      background-color: rgb(212, 212, 212);
+      font-weight: 200;
+      padding: 10px;
+    }
+
+    #order_summary > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 10px;
+    }
+
+    #order_summary > p {
+      padding: 4px 10px;
+    }
+    #sub {
+      float: right;
+      margin-top: -7%;
+    }
+    #margin {
+      margin-top: 5%;
+    }
+    #promo {
+      display: flex;
+      align-content: center;
+      height: 50px;
+      margin: 8px;
+    }
+    #promo > input {
+      background-color: white;
+      border: 1px solid gray;
+    }
+    #promo > input:nth-child(1) {
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      width: 70%;
+    }
+    #promo > input:nth-child(2) {
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 30%;
+    }
+
+    .we_accept {
+      margin-top: 12px;
+    }
+  </style>
   <body>
     <div class="scroll-up-btn">UP</div>
-    <!-- Primary nav bar -->
+    <!-- nav bar -->
     <nav>
       <div class="mobile_navbar">
         <div class="nav_container">
@@ -256,236 +401,132 @@
       </div>
     </nav>
 
-    <!-- main section  -->
+    <!-- hadre -->
     <div id="overlay"></div>
-    <main>
-      <div class="container">
-        <div class="right">
-          <img
-            src="https://www.rodanandfields.com/en-us/medias/22-Mini-HP-Banners-Desktop.jpg?context=bWFzdGVyfHJvb3R8MTc3NTUzfGltYWdlL2pwZWd8aGQxL2g3OC8xNTAzOTI4NDQ0NTIxNC5qcGd8YWNjYzUyZWI0Yzk3Zjc2YTIyZjRmODY0ZTQzMmExYTY3ZWNiNDAzNGEzZTcyMmNkMzE5NDZkYjkwNWFjNmM0Mw"
-            alt="home_banner">
-            
-            <div class="top-left">
-                <h1>Mini Regimens </h1>
-                <h1>That Fit Your</h1>
-                <h1>Life Your Bag</h1>
-                <p>Buy a Regimen + Mini Regimen</p>
-                <p>set, get a Free Active Hydration</p>
-                <p>Body Replenish (value $66)</p>
-                <h6 class="p">Valid through 5/31 or while supplies last. See</h6>
-               <div><a href="#">Terms & Conditions</a></div>
-                <button class="btn">SHOP NOW</button>
+
+    <div id="cartPage_container">
+      <h1 id="hader">REVIEW YOUR BAG</h1>
+      <div id="display">
+        <div style="text-align: center">
+          <!-- Membership -->
+          <div id="mmbrship">
+            <img
+              src="https://www.rodanandfields.com/en-us/_ui/images/pcperks_upsell/pc-perks-logo.png "
+              alt="pc-perks-logo"
+            />
+            <p>Subscribe & Save $18.00!</p>
+            <p>
+              join PC Perks for $19.95 to save 10% +Gift free shipping on orders
+              $8 0+
+            </p>
+            <a href=""> View More</a>
+            <div>
+              <button id="btn">ADD MEMBERSHIP-$19.95</button>
             </div>
-           
-            </div>
+          </div>
+
+          <!-- ordered itm -->
+
+          <div id="summary"></div>
+        </div>
+
+        <!-- ORDER SUMMARY -->
+
+        <div id="order_summary">
+          <h2>ORDER SUMMARY</h2>
+
+          <div>
+            <h4>SUBTOTAL</h4>
+            <p id="sub_total"></p>
+          </div>
+          <div>
+            <h4>SHIPPING</h4>
+            <p>Calculated At Checkout</p>
+          </div>
+
+          <hr id="margin" />
+
+          <div>
+            <h4>Estimated Total</h4>
+            <p id="estimated_sub"></p>
+          </div>
+          <p>4 intrest-free payment of $43.75 with</p>
+          <p>Klarna <a href="#">Learn more</a></p>
+          <hr id="margin" />
+
+          <form id="promo">
+            <input placeholder="Enter Promo Code" id="promo_value" />
+            <input type="submit" value="APPLY" />
+          </form>
+          <hr />
+          <button
+            id="continue_shopping"
+            type="submit"
+            style="
+              height: 40px;
+              width: 100%;
+              color: black;
+              margin-top: 6px;
+              background-color: #fff;
+            "
+          >
+            CONTINUE SHOPPING
+          </button>
+          <button
+            onclick="window.location.href='./checkout.html'"
+            type="submit"
+            style="
+              height: 40px;
+              width: 100%;
+              color: rgb(248, 248, 248);
+              background-color: rgb(0, 0, 0);
+              margin-top: 10px;
+            "
+          >
+            SECURE CHECKOUT
+          </button>
+          <div class="we_accept">
+            <p>
+              we accept
+
+              <img
+                style="height: 30px; width: 50px"
+                src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-paypal.png"
+                alt="PayPal"
+              />
+              <img
+                style="height: 30px; width: 50px"
+                src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-visa.png"
+                alt="visa"
+              />
+              <img
+                style="height: 30px; width: 50px"
+                src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-mastercard.png"
+                alt="mastercard"
+              />
+              <img
+                style="height: 30px; width: 50px"
+                src=" https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-discover.png"
+                alt="xxx"
+              />
+              <img
+                style="height: 30px; width: 50px"
+                src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-amex.png"
+                alt="xxy"
+              />
+              <img
+                style="height: 30px; width: 50px"
+                src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/klarna-logo.png"
+                alt="xsx"
+              />
+            </p>
+          </div>
         </div>
       </div>
-      <a href="#">Shop Best Sellers</a>
-    </main>
+      <!-- card -->
 
-    <!-- carousel section  -->
-    <section>
-      <div class="carousel">
-        <div class="carousel_items">
-          <div>
-            <h1>Discover the life-changing products loved by millions.</h1>
-            <a href="./product.html">Shop Best Sellers</a>
-          </div>
-        </div>
-        <div class="left_button"><</div>
-        <div class="right_button">></div>
-      </div>
-    </section>
-
-    <!-- all products section  -->
-    <section>
-      <div class="all_products">
-        <h1>Derm Inspired Skincare for <i>Every</i> Concern</h1>
-        <div class="products">
-          <div>
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Fine-Lines-Wrinkles-Card.jpg?context=bWFzdGVyfHJvb3R8NTgzMDF8aW1hZ2UvanBlZ3xoODYvaGY2LzEyODg5MTg4MjA0NTc0LmpwZ3wzYjIwYmU0ZWI3NWZkYjFmNzJjNjVmZWNhYmJmN2RlODdjYjFmNTU0ODZjZWE0YjQ5NWIzNWQzYmQyN2UxZjli"
-              alt="product"
-            />
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Category-Image-1.png?context=bWFzdGVyfHJvb3R8MzcxNDI1fGltYWdlL3BuZ3xoOGIvaDJiLzEzOTAwNTk3MTMzMzQyLnBuZ3w5NTMwMDY2NDkxOTRmNDI1Mjc5ZjIyOTYxYjUyZTFiNDkyNDZhODZmNTJlZmQ4ZjU4NzBmZjI2NzFiMzhmZTMy"
-              alt="product"
-            />
-            <h4>Fine Lines + Wrinkles</h4>
-          </div>
-
-          <div>
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Acne-Breakouts-Card.jpg?context=bWFzdGVyfHJvb3R8NjU4Mjd8aW1hZ2UvanBlZ3xoMTEvaDJhLzEyODg5MTg4MjcwMTEwLmpwZ3wxMTg2NjQ4NjM0Y2QyZDY4MDdmZDU4ZmI0ZDkxMTlhM2UxMDgyYTFkMGVkOWMzMTBkYzY3ZTJmNGEzNzVlZDhm"
-              alt="product"
-            />
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Category-Image-2.png?context=bWFzdGVyfHJvb3R8Mzg1Mjk1fGltYWdlL3BuZ3xoOGUvaGI2LzEzOTAwNTk3MTk4ODc4LnBuZ3xmYzY3MThiYTcyZTNiMjhjNTI4MGZjNTUxMTY5OTgwNjFhMWQzM2Y0ZWQyZjJjMTUwOGEwYjBmM2Y1NjVlMTI3"
-              alt="product"
-            />
-            <h4>Acne + Breakouts</h4>
-          </div>
-
-          <div>
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Uneven-Tone-Brown-Spots-Card.jpg?context=bWFzdGVyfHJvb3R8NTc4OTV8aW1hZ2UvanBlZ3xoY2UvaDY0LzEyODg5MTg4MzM1NjQ2LmpwZ3w0ZjUyN2U3MWE1YzYwNmNmYzgxZTQ3MTAxNmU3ZGIyNjA4NmU1MTQ2Mjc4NWU2NWRhOTFmNDU3NGRmNmI0MDFi"
-              alt="product"
-            />
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Category-Image-3.png?context=bWFzdGVyfHJvb3R8MzU2OTI0fGltYWdlL3BuZ3xoNDMvaGJkLzEzOTAwNTk3MjY0NDE0LnBuZ3xhMWMzNDBiMGI0MWJmNjkwMDk2NDc0NGMxMjc4ZjljYzMzODYyYTRmNGUyNjFiYjZlOWZhOWM4ZmUzYTFjZmYz"
-              alt="product"
-            />
-            <h4>Uneven Tone + Dark Spots</h4>
-          </div>
-
-          <div>
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Sensitivity-Visible-Redness-Card.jpg?context=bWFzdGVyfHJvb3R8NjE5MTd8aW1hZ2UvanBlZ3xoNTgvaGM3LzEyODg5MTg4NDAxMTgyLmpwZ3wwN2M4ZTJmMGExMDI1ZTM2MjE4M2I3MzFlZWI5NDJkZDYzZmMzMDdhMDMyNGFjODUyY2MwMWUzMDk5MDVjZWZk"
-              alt="product"
-            />
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Category-Image-4.png?context=bWFzdGVyfHJvb3R8MzEzMzg3fGltYWdlL3BuZ3xoYjIvaDMwLzEzOTAwNTk3MzI5OTUwLnBuZ3xlOGYwOTgwZmYxNWIzNGVhNjZiN2I1NGI0NWVmZTFhOGQwYmJlOGMzZjE5NzA4ODRjNjZlMzliZDAzZjVhNDk0"
-              alt="product"
-            />
-            <h4>Sensitivity + Visible Redness</h4>
-          </div>
-
-          <div>
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Dry-Skin-Card.jpg?context=bWFzdGVyfHJvb3R8NjY4Mjl8aW1hZ2UvanBlZ3xoZTkvaDJjLzEyODg5MTg4NDY2NzE4LmpwZ3w2M2M5MDI0YzI3ZTgyNDIxZmE0MTZmNGJiMWU5ZGZhZDM0NzQ3NmJhNDUxY2MyMTZjNjk4NDQ4NTAxMDk1MDNj"
-              alt="product"
-            />
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Category-Image-5.png?context=bWFzdGVyfHJvb3R8MjU0NDM1fGltYWdlL3BuZ3xoYjAvaGY4LzEzOTAwNTk3Mzk1NDg2LnBuZ3xlMmE5ZWIyN2YyYTVjZjZiZTVkZmUyZjJjODhmY2Q5MTdmMWM0NWQ1NTQ4MzFmZjM3YjUyNWI3M2NhYjI3ZTll"
-              alt="product"
-            />
-            <h4>Dry Skin</h4>
-          </div>
-          <div>
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Eyes-Lips-Lashes-Card.jpg?context=bWFzdGVyfHJvb3R8ODY2MjZ8aW1hZ2UvanBlZ3xoZjAvaGE2LzEyODg5MTg4NTMyMjU0LmpwZ3w2ZmNiOWQwNjJhNGZlYjViMjA2MDhiYTlmN2JlMDU2M2NkMmNlMzJjNzU5ZmQ5ZWQxZTRkZmEwZGY3MDBhNjgy"
-              alt="product"
-            />
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Category-Image-6.png?context=bWFzdGVyfHJvb3R8Mzc1MzQ5fGltYWdlL3BuZ3xoMjEvaDdiLzEzOTAwNTk3NDYxMDIyLnBuZ3xkNjNjZjczZWMzYzM4MDIyMjA1NzIwOTgwZDM0YTU4MGIzMmY1YmZlZGM2Y2I5ODdmZWU4NDEzMjAxOTgxZGY0"
-              alt="product"
-            />
-            <h4>Eyes, Lips + Lashes</h4>
-          </div>
-        </div>
-        <button class="btn btn2">Shop All Products</button>
-      </div>
-    </section>
-
-    <!-- carousel  -->
-    <section>
-      <div class="grid_carousel">
-        <div class="grid_carousel_items">
-          <div class="item">
-            <div class="left_item">
-              <h2>Ultimate Eye Cream</h2>
-              <p>6,000 five-star reviews and counting!</p>
-              <a href="#">Shop Now</a>
-            </div>
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Homepage-PromoModule-MFEC-Desktop.jpg?context=bWFzdGVyfHJvb3R8MzgyNDU0fGltYWdlL2pwZWd8aDJjL2hkZi8xMzg1NDY1ODIzMjM1MC5qcGd8YjQwNjFlZTlkMDUwNTM2ZDUxZTI2YzE5ZmFhMzM4ZjlkYmQxMTNhNDg2NzJjMDc5NzhmNTEzMTYzYWY5NGI2NA"
-              alt="img"
-            />
-          </div>
-          <div class="item">
-            <div class="left_item">
-              <h2>Self-Care Essentials</h2>
-              <p>
-                Enjoy a beauty retreat at home with restorative and protective
-                skincare treatments.
-              </p>
-              <a href="#">Shop Now</a>
-            </div>
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Promo-Self-Care.jpg?context=bWFzdGVyfHJvb3R8Mzk2NjI0fGltYWdlL2pwZWd8aGQzL2gzNC8xMjg4OTE4ODc5NDM5OC5qcGd8NzIxN2Y5NThiZWNlYmM4MDUwYTIzM2YyM2FlMDRiOGY1YTAzNTdkYjk1ZjNjMmZiNTlmNmY2MTdkYTA4ODJmMQ"
-              alt="img"
-            />
-          </div>
-          <div class="item">
-            <div class="left_item">
-              <h2>Bundle + Save!</h2>
-              <p>
-                Save 20% on Lash Boost when you buy a skincare Regimen of your
-                choice.
-              </p>
-              <a href="#">Shop Now</a>
-            </div>
-            <img
-              src="https://www.rodanandfields.com/en-us/medias/Promo-Lash-Boost.jpg?context=bWFzdGVyfHJvb3R8MTc2MDI4fGltYWdlL2pwZWd8aDExL2gxMC8xMjg4OTE4ODg1OTkzNC5qcGd8NDI5NjQ3N2JhYTYwNDdmMTMyZDgwY2U0NWZiNGNhYWFkYzgwNWM2YWNhNjRhMzYyOWFmOTBhMTFjMjgxMGNkMg"
-              alt="img"
-            />
-          </div>
-        </div>
-        <div class="left_button"><</div>
-        <div class="right_button">></div>
-      </div>
-    </section>
-
-    <!-- Our doctor section  -->
-    <section>
-      <div class="medical">
-        <div>
-          <img
-            src="https://www.rodanandfields.com/en-us/medias/Derm-Inspired-Card1.png?context=bWFzdGVyfHJvb3R8OTY4NDh8aW1hZ2UvcG5nfGg2NC9oNDUvMTQzNjc5Njg3NTU3NDIucG5nfGQ1MTk2NGM3YzFhZjVhNmI3OTAwNDMzYjQyM2ZhY2E3OTgzMTc0YTdiYWI4Mzc3YTNlY2QyYjgzNDVmZDlkNmI"
-            alt="img"
-          />
-          <h3>Derm Inspired</h3>
-          <p>
-            Dr. Katie Rodan + Dr. Kathy fields founded R+F to give everyone
-            access to life-changing skincare.
-          </p>
-          <a href="#">Meet Our Doctors</a>
-        </div>
-        <div>
-          <img
-            src="https://www.rodanandfields.com/en-us/medias/Clinically-Tested-Card2.png?context=bWFzdGVyfHJvb3R8ODkyMTR8aW1hZ2UvcG5nfGhjNC9oOTAvMTQzNjc5Njg4MjEyNzgucG5nfGMwYmUyOTdlYzA0NjRjNWZjMTMzNTdmYmFlMTU4ZmY5ZWY4YTJkNDEyZWQ1YzM0Mjk2ZTg5MGQzMWY0MGNhZjQ"
-            alt="img"
-          />
-          <h3>Clinically Tested</h3>
-          <p>
-            Our innovative formulas are tested in our lab and designed to work
-            together to deliver real results.
-          </p>
-          <a href="#">Discover Multi-Med Therapy</a>
-        </div>
-        <div>
-          <img
-            src="https://www.rodanandfields.com/en-us/medias/Results-Guaranteed-Card3.png?context=bWFzdGVyfHJvb3R8OTM4NzB8aW1hZ2UvcG5nfGgxYy9oZDcvMTQzNjc5Njg4ODY4MTQucG5nfGM4MTI2NzNmNmFlMWE0YTU1M2YzNmY3NDYzMTU4YTk5YWI5YWU5MWJhYzIwY2MxMmU1ZDQzNWIzYTcwM2NkM2Q"
-            alt="img"
-          />
-          <h3>Results Guaranteed</h3>
-          <p>
-            See and feel the best skin of your life within 60 days or your money
-            back. Even on empty bottles.
-          </p>
-          <a href="#">Our Money-Back Guarantee</a>
-        </div>
-      </div>
-    </section>
-
-    <h4>@rodanandfields</h4>
-
-    <section>
-      <div class="services">
-        <div class="inner">
-          <div class="left">
-            <h1>Personalized Skincare Services</h1>
-            <ul>
-              <li>Customized recommendations</li>
-              <li>Learn more about our products</li>
-              <li>Enjoy ongoing skincare advice</li>
-            </ul>
-          </div>
-          <button class="btn">Find A Consultant</button>
-        </div>
-      </div>
-    </section>
-
+      <!-- FOOTER -->
+    </div>
     <!-- footer section  -->
     <footer>
       <div class="primary">
@@ -548,12 +589,137 @@
         <div>Preference Center</div>
       </div>
     </footer>
-
-    <script src="./Script/best_seller.js"></script>
-    <script src="/All Products Script/products.js"></script>
-    <script src="./Script/index.js"></script>
+    <script src="./Script/functionality.js"></script>
+    <script src="./Script/cart.js"></script>
     <script src="./Script/search.js"></script>
     <script src="./Script/sign_in.js"></script>
-    <script src="./Script/cart.js"></script>
   </body>
 </html>
+<script>
+  var cartList = JSON.parse(localStorage.getItem("cartList")) || [];
+
+  function displayData(data) {
+    document.querySelector("#summary").innerHTML = "";
+    data.map(function (elem, index) {
+      var div = document.createElement("div");
+      div.id = "summary_card";
+      var img = document.createElement("img");
+      img.setAttribute("src", elem.img);
+      var div2 = document.createElement("div");
+      var div3 = document.createElement("div");
+      var div4 = document.createElement("div");
+
+      div2.append(div3, div4);
+      var h4 = document.createElement("h4");
+      h4.innerText = elem.name;
+      var p = document.createElement("p");
+      p.innerText = "Congratulation you get 10% discount on this item.";
+      var inc_qty = document.createElement("button");
+      inc_qty.innerText = "+";
+      inc_qty.className = "inc";
+      inc_qty.addEventListener("click", function () {
+        increase_qty(index);
+      });
+
+      var quantity = document.createElement("span");
+      quantity.innerText = elem.qty;
+      var dec_qty = document.createElement("button");
+      dec_qty.innerText = "-";
+      dec_qty.className = "dec";
+      dec_qty.addEventListener("click", function () {
+        decrease_qty(index);
+      });
+      div3.append(h4, p, dec_qty, quantity, inc_qty);
+
+      var remove = document.createElement("p");
+      remove.addEventListener("click", function () {
+        remove_the_item(elem);
+      });
+      remove.innerHTML = "<i class='bx bxs-trash-alt'> </i>";
+      var price = document.createElement("h4");
+      price.innerText = "$" + elem.price;
+
+      div4.append(remove, price);
+      div.append(img, div2);
+
+      document.querySelector("#summary").append(div);
+    });
+  }
+
+  displayData(cartList);
+  show_total();
+
+  var promo_form = document.querySelector("#promo");
+  promo_form.addEventListener("submit", apply_discount);
+
+  function apply_discount(e) {
+    e.preventDefault();
+    var code = document.querySelector("#promo_value").value;
+    var total = cartList.reduce(function (acc, elem) {
+      return acc + elem.price * elem.qty;
+    }, 0);
+    if (code == "masai30") {
+      document.querySelector("#sub_total").innerText =
+        "$" + Math.floor((total / 100) * 70);
+      document.querySelector("#estimated_sub").innerText =
+        "$" + Math.floor((total / 100) * 70);
+      document.querySelector("#promo_value").disabled = true;
+      document.querySelector("#promo>input[type='submit']").disabled = true;
+    } else if (code.trim().length == 0) {
+      alert("Please enter some code first");
+    } else {
+      alert("wrong code");
+    }
+    document.querySelector("#promo_value").value = "";
+  }
+
+  document
+    .querySelector("#continue_shopping")
+    .addEventListener("click", function () {
+      window.location.href = "../product.html";
+    });
+
+  function increase_qty(index) {
+    cartList[index].qty++;
+    localStorage.setItem("cartList", JSON.stringify(cartList));
+    display_data(cartList);
+    displayData(cartList);
+    show_total();
+  }
+
+  function decrease_qty(index) {
+    if (cartList[index].qty > 1) {
+      cartList[index].qty--;
+    }
+    localStorage.setItem("cartList", JSON.stringify(cartList));
+    display_data(cartList);
+    displayData(cartList);
+    show_total();
+  }
+  function show_total() {
+    var total = cartList.reduce(function (acc, elem) {
+      return acc + elem.price * elem.qty;
+    }, 0);
+
+    var total_price = document.querySelector("#sub_total");
+    var estmtd_price = document.querySelector("#estimated_sub");
+
+    total_price.innerText = "$" + total;
+    estmtd_price.innerText = "$" + total;
+  }
+
+  function remove_the_item(elem) {
+    var filter_data = cartList.filter(function (item) {
+      return item != elem;
+    });
+    localStorage.setItem("cartList", JSON.stringify(filter_data));
+    display_data(filter_data);
+    displayData(filter_data);
+    show_total();
+    location.reload();
+  }
+
+  if (cartList.length == 0) {
+    window.location.href = "./empty_bag/empty_bag.html";
+  }
+</script>
