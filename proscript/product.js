@@ -66,14 +66,14 @@ var prodArr=JSON.parse(localStorage.getItem("allProducts"))
     let filteredProducts = prodArr;
 
 const populateProducts = () => {
-    // console.log('here')cx
+    
     document.querySelector("#productarray").innerHTML = ''
 
     filteredProducts.map(function(elem){
     var mainDiv=document.createElement("div");
     var childDiv=document.createElement("div");
     var rewDiv=document.createElement("div");
-    //img section
+   
     var image=document.createElement("img")
     image.setAttribute("src",elem.img)
     //discription

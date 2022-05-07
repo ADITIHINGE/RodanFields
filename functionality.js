@@ -116,5 +116,5 @@
   start_shop_btn.addEventListener("click",redirect_to_allProducts);
   
   function redirect_to_allProducts(){
-    window.location.href="../product.html";
+    window.location.href="/product.html";
   }

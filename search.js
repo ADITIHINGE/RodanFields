@@ -22,13 +22,13 @@ function displayData(data){
     
         document.querySelector(".serach_result_container").append(mainDiv);
         mainDiv.addEventListener("click",function(){
-            window.location.href="../product.html";
+            window.location.href="/product.html";
         })
       });
 }
 
 document.querySelector(".search_results>a").addEventListener("click",function(){
-    window.location.href="../product.html";
+    window.location.href="/product.html";
 })
 
 function searchArr(){

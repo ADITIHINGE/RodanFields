@@ -69,7 +69,7 @@ function myScript(event){
             lower.classList.add("invalid");
         }
     
-    //number validation
+    
     var num = /[0-9]/g;
 
     if(input1.value.match(num))

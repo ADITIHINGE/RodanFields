@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="../styles/nav.css" />
     <title>Treatments for All Skin Types | Rodan + Fields®</title>
-    <link rel="stylesheet" href="regimens.css" />
+    <link rel="stylesheet" href="./regimens.css" />
   </head>
   <style>
     #hover {
@@ -299,7 +299,7 @@
       <p id="hover" style="color: rgb(46, 46, 46)"><</p>
 
       <button
-        onclick="location.href='regimens 1.html'"
+        onclick="location.href='./regimens 1.html'"
         id="hover"
         style="background-color: rgb(240, 240, 240); border: none; color: grey"
       >
@@ -377,7 +377,7 @@
   </body>
 </html>
 
-<script src="../products/products.js"></script>
+<script src="../products.js"></script>
 <script type="text/javascript">
   var regimens = JSON.parse(localStorage.getItem("allProducts"));
 
@@ -418,7 +418,7 @@
     }
   });
 
-  //Add to cart
+
   var cartList = JSON.parse(localStorage.getItem("cartList")) || [];
 
   function addToCart(elem) {
@@ -451,6 +451,6 @@
     return 0;
   }
   document.getElementById("hover").onclick = function () {
-    location.href = "regimens 1.html";
+    location.href = "./regimens 1.html";
   };
 </script>

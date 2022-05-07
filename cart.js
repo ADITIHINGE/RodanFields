@@ -9,7 +9,7 @@ function display_data(data){
         checkOut.addEventListener("click",redirect_to_checkOut);
 
         function redirect_to_checkOut(){
-          window.location.href="../reviewbagandchkout.html";
+          window.location.href="./reviewbagandchkout.html";
         }
       }
 
